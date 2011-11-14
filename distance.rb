@@ -75,6 +75,10 @@ class Distance
     @value_in_meters >= other.value_in_meters
   end
 
+  def ==(other)
+    @value_in_meters == other.value_in_meters
+  end
+
   def to_i
     @value.to_i
   end
